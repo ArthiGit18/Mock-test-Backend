@@ -1,0 +1,71 @@
+{
+  "error": false,
+  "message": "Templates fetched successfully.",
+  "data": [
+    {
+      "id": "9797445a44ff694213s7f4e8",
+      "name": "IELTS Test 01",
+      "module": "academic",
+      "mockType": "ielts",
+      "duration": 1200,
+      "sections": [
+        { "name": "Reading", "duration": 300, "questionsCount": 10 },
+        { "name": "Writing", "duration": 300, "questionsCount": 1 },
+        { "name": "Listening", "duration": 300, "questionsCount": 10 },
+        { "name": "Speaking", "duration": 300, "questionsCount": 1 }
+      ]
+    },
+    {
+      "id": "9797445a44ff694213s7f4e9",
+      "name": "IELTS Test 02",
+      "module": "academic",
+      "mockType": "ielts",
+      "duration": 1200,
+      "sections": [
+        { "name": "Reading", "duration": 300, "questionsCount": 10 },
+        { "name": "Writing", "duration": 300, "questionsCount": 1 },
+        { "name": "Listening", "duration": 300, "questionsCount": 10 },
+        { "name": "Speaking", "duration": 300, "questionsCount": 1 }
+      ]
+    },
+    {
+      "id": "9797445a44ff694213s7f4ea",
+      "name": "IELTS Test 03",
+      "module": "academic",
+      "mockType": "ielts",
+      "duration": 1200,
+      "sections": [
+        { "name": "Reading", "duration": 300, "questionsCount": 10 },
+        { "name": "Writing", "duration": 300, "questionsCount": 1 },
+        { "name": "Listening", "duration": 300, "questionsCount": 10 },
+        { "name": "Speaking", "duration": 300, "questionsCount": 1 }
+      ]
+    },
+    {
+      "id": "9797445a44ff694213s7f4eb",
+      "name": "IELTS Test 04",
+      "module": "academic",
+      "mockType": "ielts",
+      "duration": 1200,
+      "sections": [
+        { "name": "Reading", "duration": 300, "questionsCount": 10 },
+        { "name": "Writing", "duration": 300, "questionsCount": 1 },
+        { "name": "Listening", "duration": 300, "questionsCount": 10 },
+        { "name": "Speaking", "duration": 300, "questionsCount": 1 }
+      ]
+    },
+    {
+      "id": "9797445a44ff694213s7f4ec",
+      "name": "IELTS Test 05",
+      "module": "academic",
+      "mockType": "ielts",
+      "duration": 1200,
+      "sections": [
+        { "name": "Reading", "duration": 300, "questionsCount": 10 },
+        { "name": "Writing", "duration": 300, "questionsCount": 1 },
+        { "name": "Listening", "duration": 300, "questionsCount": 10 },
+        { "name": "Speaking", "duration": 300, "questionsCount": 1 }
+      ]
+    }
+  ]
+}

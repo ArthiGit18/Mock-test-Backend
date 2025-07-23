@@ -48,4 +48,34 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.get('/', async (req, res) => {
+  try {
+    const secret = req.headers['secret'];
+    if (secret !== process.env.SECRET_KEY) {
+      return res.status(403).json({ error: true, message: 'Unauthorized' });
+    }
+
+    const users = await User.find();
+    res.status(200).json({ error: false, data: users });
+  } catch (err) {
+    res.status(500).json({ error: true, message: 'Server error' });
+  }
+});
+
+router.delete('/:id', async (req, res) => {
+  try {
+    const secret = req.headers['secret'];
+    if (secret !== process.env.SECRET_KEY) {
+      return res.status(403).json({ error: true, message: 'Unauthorized' });
+    }
+
+    await User.findByIdAndDelete(req.params.id);
+    res.status(200).json({ error: false, message: 'User deleted successfully' });
+  } catch (err) {
+    res.status(500).json({ error: true, message: 'Server error' });
+  }
+});
+
+
+
 module.exports = router;

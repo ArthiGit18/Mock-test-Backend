@@ -4,56 +4,38 @@ const User = require('../models/User');
 const Submission = require('../models/Submission');
 const fs = require('fs');
 const path = require('path');
-
 const questionsPath = path.join(__dirname, '../data/questions.json');
-
 router.post('/', async (req, res) => {
   try {
     const { email, answers = [], examId } = req.body;
-
-    // Validate required fields
     if (!email || !examId) {
       return res.status(400).json({ error: true, message: 'Email and examId are required.' });
     }
-
-    // Find the user by email
     const user = await User.findOne({ email });
     if (!user) {
       return res.status(404).json({ error: true, message: 'User not registered.' });
     }
-
-    // Read questions from file
     if (!fs.existsSync(questionsPath)) {
       return res.status(500).json({ error: true, message: 'Questions file not found.' });
     }
-
     const questionsData = JSON.parse(fs.readFileSync(questionsPath, 'utf-8'));
     const examQuestions = questionsData[examId];
-
     if (!examQuestions) {
       return res.status(404).json({ error: true, message: 'Invalid exam ID.' });
     }
-
     const allQuestions = Object.values(examQuestions).flat();
     const total = allQuestions.length;
     let score = 0;
     let answeredCount = 0;
-
-    // Calculate score
     answers.forEach((ans, idx) => {
       const correctAnswer = allQuestions[idx]?.answer;
-
       if (ans && ans.answer && ans.answer.trim() !== '') {
         answeredCount++;
-
-        // Only count score if the question has a correctAnswer (not open-ended)
         if (correctAnswer && correctAnswer !== 'Open-ended' && ans.answer === correctAnswer) {
           score++;
         }
       }
     });
-
-    // Determine submission status
     let status = 'not_started';
     if (answeredCount === 0) {
       status = 'not_started';
@@ -62,8 +44,6 @@ router.post('/', async (req, res) => {
     } else {
       status = 'completed';
     }
-
-    // Save submission
     const submission = new Submission({
       examId,
       user: user._id,
@@ -72,14 +52,10 @@ router.post('/', async (req, res) => {
       total,
       status,
     });
-
     await submission.save();
-
-    // Update user submission references
     user.submissions.push(submission._id);
     user.status = status;
     await user.save();
-
     return res.status(200).json({
       error: false,
       message: 'Test submitted successfully.',
@@ -88,11 +64,9 @@ router.post('/', async (req, res) => {
       score,
       total,
     });
-
   } catch (err) {
     console.error('Submit Error:', err);
     return res.status(500).json({ error: true, message: 'Internal server error.' });
   }
 });
-
 module.exports = router;

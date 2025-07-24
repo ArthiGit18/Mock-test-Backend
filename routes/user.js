@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User'); // Assuming your model is in models/User.js
-
-// Get all users
+const User = require('../models/User');
 router.get('/users', async (req, res) => {
   try {
     const users = await User.find();
@@ -11,7 +9,6 @@ router.get('/users', async (req, res) => {
     res.status(500).json({ error: true, message: err.message });
   }
 });
-
 router.put('/users/:id/status', async (req, res) => {
   const { id } = req.params;
   try {
@@ -24,8 +21,6 @@ router.put('/users/:id/status', async (req, res) => {
     res.status(500).json({ error: true, message: error.message });
   }
 });
-
-// Delete user by ID
 router.delete('/users/:id', async (req, res) => {
   try {
     const user = await User.findByIdAndDelete(req.params.id);
@@ -37,5 +32,4 @@ router.delete('/users/:id', async (req, res) => {
     res.status(500).json({ error: true, message: err.message });
   }
 });
-
 module.exports = router;

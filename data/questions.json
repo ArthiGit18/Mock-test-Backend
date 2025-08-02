@@ -3,45 +3,137 @@
     "Reading": [
       {
         "question": "Which planet is known as the Red Planet?",
-        "options": ["Earth", "Mars", "Jupiter", "Venus"],
+        "options": [
+          "Earth",
+          "Mars",
+          "Jupiter",
+          "Venus"
+        ],
         "answer": "Mars"
       },
       {
-        "question": "Who wrote the play \"Romeo and Juliet\"?",
-        "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Leo Tolstoy"],
-        "answer": "William Shakespeare"
+        "question": "What is the main purpose of a topic sentence in a paragraph?",
+        "options": [
+          "To summarize the paragraph",
+          "To introduce the main idea",
+          "To list all the points",
+          "To conclude the paragraph"
+        ],
+        "answer": "To introduce the main idea"
       },
       {
-        "question": "What is the synonym of “happy”?",
-        "options": ["Sad", "Joyful", "Angry", "Tired"],
-        "answer": "Joyful"
+        "question": "What does the term 'coherence' refer to in academic reading?",
+        "options": [
+          "Correct grammar usage",
+          "Logical connection of ideas",
+          "Accurate punctuation",
+          "Clear handwriting"
+        ],
+        "answer": "Logical connection of ideas"
       },
       {
-        "question": "Where do penguins live?",
-        "options": ["Africa", "Antarctica", "Asia", "Australia"],
-        "answer": "Antarctica"
+        "question": "According to the passage, why are mangroves important to coastal ecosystems?",
+        "options": [
+          "They increase tourism",
+          "They prevent soil erosion",
+          "They provide drinking water",
+          "They reduce air pollution"
+        ],
+        "answer": "They prevent soil erosion"
+      },
+      {
+        "question": "Which of the following is a feature of a formal academic text?",
+        "options": [
+          "Use of contractions",
+          "First-person narrative",
+          "Colloquial expressions",
+          "Objective tone"
+        ],
+        "answer": "Objective tone"
+      },
+      {
+        "question": "What is implied by the author when stating that 'reading extensively improves vocabulary'?",
+        "options": [
+          "You need to memorize words",
+          "Only difficult texts improve vocabulary",
+          "Exposure to varied texts enhances word knowledge",
+          "Reading is the only way to learn vocabulary"
+        ],
+        "answer": "Exposure to varied texts enhances word knowledge"
       }
     ],
     "Writing": [
       {
-        "question": "Write a paragraph about the impact of social media on youth.",
-        "answer": "Open-ended"
+        "question": "Task 1: You recently visited a museum in your city. Write a letter to your friend about the visit. In your letter, you should:\n- describe the museum\n- explain what you saw and did there\n- say why you think your friend would like the museum.",
+        "options": [],
+        "answer": ""
       },
       {
-        "question": "Describe a memorable birthday celebration and what made it special.",
-        "answer": "Open-ended"
+        "question": "Task 1: The chart below shows the percentage of households in a European country that had various technological devices between 1995 and 2015.\n\nSummarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+        "options": [],
+        "answer": ""
+      },
+      {
+        "question": "Task 2: Some people believe that the government should pay for healthcare and education, while others think it is the individual's responsibility.\n\nDiscuss both views and give your opinion.",
+        "options": [],
+        "answer": ""
+      },
+      {
+        "question": "Task 2: In many countries, plastic containers have become more common than ever. Some people think it is a positive development, while others believe it is harmful.\n\nDiscuss both views and give your opinion.",
+        "options": [],
+        "answer": ""
       }
     ],
     "Listening": [
       {
-        "question": "What do you hear when it rains?",
-        "options": ["Thunder", "Splash", "Rustle", "Chirp"],
-        "answer": "Splash"
+        "question": "You will hear a conversation between a student and a librarian. What is the student looking for?",
+        "options": [
+          "A history textbook",
+          "A research article",
+          "A map collection",
+          "An audio recording"
+        ],
+        "answer": "A research article"
       },
       {
-        "question": "Which animal makes a \"moo\" sound?",
-        "options": ["Dog", "Cat", "Cow", "Sheep"],
-        "answer": "Cow"
+        "question": "What time does the museum open on weekends, according to the speaker?",
+        "options": [
+          "8:00 AM",
+          "9:30 AM",
+          "10:00 AM",
+          "11:00 AM"
+        ],
+        "answer": "10:00 AM"
+      },
+      {
+        "question": "Where is the conference room located?",
+        "options": [
+          "First floor",
+          "Second floor",
+          "Third floor",
+          "Ground floor"
+        ],
+        "answer": "Second floor"
+      },
+      {
+        "question": "Which item does the woman want to return?",
+        "options": [
+          "A printer",
+          "A microwave",
+          "A vacuum cleaner",
+          "A fan"
+        ],
+        "answer": "A microwave"
+      },
+      {
+        "question": "What is the main reason for the man's visit to the travel agency?",
+        "options": [
+          "To cancel a trip",
+          "To book a hotel",
+          "To inquire about travel insurance",
+          "To buy flight tickets"
+        ],
+        "answer": "To inquire about travel insurance"
       }
     ],
     "Speaking": [
@@ -51,52 +143,6 @@
       },
       {
         "question": "Share your thoughts on the importance of teamwork in sports.",
-        "answer": "Open-ended"
-      }
-    ]
-  },
-  "9797445a44ff694213s7f4e9": {
-    "Reading": [
-      {
-        "question": "Which planet is known as the Red Planet?",
-        "options": ["Earth", "Mars", "Jupiter", "Saturn"],
-        "answer": "Mars"
-      },
-      {
-        "question": "Who wrote 'Romeo and Juliet'?",
-        "options": ["William Wordsworth", "William Shakespeare", "John Keats", "Charles Dickens"],
-        "answer": "William Shakespeare"
-      }
-    ],
-    "Writing": [
-      {
-        "question": "Explain the importance of time management in student life.",
-        "answer": "Open-ended"
-      },
-      {
-        "question": "Write about a significant event in your country’s history.",
-        "answer": "Open-ended"
-      }
-    ],
-    "Listening": [
-      {
-        "question": "What does a dog say?",
-        "options": ["Meow", "Quack", "Bark", "Moo"],
-        "answer": "Bark"
-      },
-      {
-        "question": "What do you hear during a thunderstorm?",
-        "options": ["Silence", "Chirping", "Thunder", "Whistle"],
-        "answer": "Thunder"
-      }
-    ],
-    "Speaking": [
-      {
-        "question": "Describe a hobby you enjoy and how you got started.",
-        "answer": "Open-ended"
-      },
-      {
-        "question": "Talk about a memorable journey you took.",
         "answer": "Open-ended"
       }
     ]

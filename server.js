@@ -12,6 +12,8 @@ const SECRET_KEY = process.env.SECRET_KEY || 'dummy-secret';
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI, {
@@ -32,6 +34,8 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/test', require('./routes/authRoutes'));
 app.use('/api/results', require('./routes/results'));
 app.use('/api', require('./routes/contact'));
+app.use('/api/exam', require('./routes/examAuth'));
+
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);

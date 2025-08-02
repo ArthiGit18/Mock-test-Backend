@@ -26,7 +26,11 @@ const userSchema = new mongoose.Schema({
     type: Number,
     default: 0
   },
-  status: { type: String, enum: ['pending', 'partially completed', 'completed'], default: 'completed' },
+  total: {
+    type: Number,
+    default: 0
+  },
+  status: { type: String, enum: ['pending', 'partially completed', 'completed'], default: 'pending' },
   submissions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Submission' }],
 });
 
